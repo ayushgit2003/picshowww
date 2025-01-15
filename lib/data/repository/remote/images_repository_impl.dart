@@ -8,6 +8,7 @@ class ImagesRepositoryImpl implements ImagesRepository {
 
   @override
   Future<List<ImagesModel>> getImages(int page, int limit) async{
+    await Future.delayed(Duration(seconds: 4));
 
     final response = await _apiServices.getApi<ImagesModel>(
       AppUrl.imagesList(page: page, limit: limit),

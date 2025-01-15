@@ -6,7 +6,7 @@ import 'package:path_provider/path_provider.dart';
 
 class CustomCacheManager extends CacheManager {
   static const String key = 'customCache';
-  static const int maxDiskSpaceMB = 100; // Max disk space in MB
+  static const int maxDiskSpaceMB = 70; // Max disk space in MB
 
   static final CustomCacheManager _instance = CustomCacheManager._internal();
 
@@ -19,7 +19,7 @@ class CustomCacheManager extends CacheManager {
     Config(
       key,
       stalePeriod: const Duration(minutes: 3), // Cache expiration time
-      maxNrOfCacheObjects: 100, // Limit to 100 objects
+      maxNrOfCacheObjects: 50, // Limit to 100 objects
       repo: JsonCacheInfoRepository(databaseName: key),
       fileService: HttpFileService(),
     ),
@@ -35,7 +35,7 @@ class CustomCacheManager extends CacheManager {
 
 
   void _startDiskSpaceMonitor() {
-    Timer.periodic(const Duration(minutes: 3), (timer) async {
+    Timer.periodic(const Duration(seconds: 30), (timer) async {
       await _checkAndCleanupDiskSpace();
     });
   }

@@ -50,7 +50,7 @@ class _ImagesScreenState extends State<ImagesScreen> {
                     child: CircularProgressIndicator(color: Colors.grey[800]),
                   );
                 }
-                break;
+              break;
 
               case Status.error:
                 return ImageErrorWidget();
