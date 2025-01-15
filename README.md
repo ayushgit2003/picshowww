@@ -3,6 +3,10 @@
 Picshow is a Flutter-based image gallery application that fetches and displays images from a remote API. It is designed with clean architecture principles, using Bloc for state management, ensuring scalability and maintainability. The app implements features like caching, zooming, infinite scrolling (pagination), and robust error handling.
 
 ---
+## Demo Video
+
+[Watch the video on Google Drive](https://drive.google.com/file/d/1ZqUJBGXR5brnJKOR8HuhuWZ2D9uSG73r/view?usp=drivesdk)
+
 
 ## Introduction
 
