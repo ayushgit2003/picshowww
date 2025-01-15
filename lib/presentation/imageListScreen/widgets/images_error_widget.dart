@@ -15,29 +15,25 @@ class ImageErrorWidget extends StatelessWidget {
     return BlocBuilder<ImagesBloc, ImagesState>(
       buildWhen: (previous, current) => previous.images != current.images,
       builder: (context, state) {
-    // Check if the error message indicates no internet connection
-    if (Status.error.toString() == "No Internet Connection") {
-    // Display InternetExceptionWidget if there's no internet connection
-    return InterNetExceptionWidget(
-    onPress: () {
-    // Retry fetching images
-    context.read<ImagesBloc>().add(FetchImagesEvent(page: 1, limit: 20));
-    },
-    );
-    }
-    // else {
-    //   // Display the error message as clickable text if it's not internet-related
-    //   return InterNetExceptionWidget(
-    //     onPress: () {
-    //       // Retry fetching images
-    //       context.read<ImagesBloc>().add(FetchImagesEvent(page: 1, limit: 20));
-    //     },
-    //   );
-    // }
-    else{
-      return Container();
-
-    }
+        // Check if the error message indicates no internet connection
+        if (Status.error.toString() == "No Internet Connection") {
+          // Display InternetExceptionWidget if there's no internet connection
+          return InterNetExceptionWidget(
+            onPress: () {
+              // Retry fetching images
+              context.read<ImagesBloc>().add(FetchImagesEvent(page: 1, limit: 20));
+            },
+          );
+        }
+        else {
+          // Display the error message as clickable text if it's not internet-related
+          return InterNetExceptionWidget(
+            onPress: () {
+              // Retry fetching images
+              context.read<ImagesBloc>().add(FetchImagesEvent(page: 1, limit: 20));
+            },
+          );
+        }
       },
     );
   }

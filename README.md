@@ -9,6 +9,7 @@ Picshow is a Flutter-based image gallery application that fetches and displays i
 
 
 ## Introduction
+ 
 
 Picshow is a feature-rich image gallery application demonstrating best practices in Flutter app development. Key highlights include:
 
@@ -75,7 +76,7 @@ Ensure the following are installed:
 
 ### 2. Clone the Repository
 
- 
+
 git clone https://github.com/ayushgit2003/picshowww
 cd picshowww
 
@@ -84,13 +85,13 @@ cd picshowww
 
 Run the following command to install the required Flutter dependencies:
 
- 
+
 flutter pub get
 
 ### 4. Run the Application
 
 Start the app by running:
-
-```bash
+ 
 flutter run
 
+ 
