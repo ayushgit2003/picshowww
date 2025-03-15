@@ -8,4 +8,9 @@ abstract class BaseApiServices {
  // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
  // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
  // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
+ // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
+ // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
+ // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
+ // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
+ // Future<List<T>> getAp<T>(String url, T Function(Map<String, dynamic>) fromJson);D
 }
