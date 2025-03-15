@@ -1,0 +1,38 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250316025557
+Username: LAPTOP-PPFLQR85\ayush
+RunAs User: LAPTOP-PPFLQR85\ayush
+Configuration Name: 
+Machine: LAPTOP-PPFLQR85 (Microsoft Windows NT 10.0.22631.0)
+Host Application: powershell -ExecutionPolicy Bypass -File .\build_apk.ps1
+Process ID: 11472
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\ayush\Downloads\sdbapp-main\sdbapp-main\picshow\build_log.txt
+Checking for new commits...
+
+New commit detected. Starting APK build process...
+
+
+
+
+
+APK saved as C:\Users\ayush\Downloads\sdbapp-main\sdbapp-main\picshow\Apk\app-release-20250316_025842-ec51e7c.apk
+APK build completed successfully.
+Waiting for 5 minutes before checking again...
+Checking for new commits...
+
+No new commits. Skipping build.
+Waiting for 5 minutes before checking again...
+Checking for new commits...
+
+No new commits. Skipping build.
+Waiting for 5 minutes before checking again...
